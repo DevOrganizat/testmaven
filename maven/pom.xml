@@ -4,7 +4,7 @@
   <groupId>com.siriinfotech.app</groupId>
   <artifactId>maven</artifactId>
   <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <name>maven</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -19,4 +19,20 @@
      <maven.compiler.source>1.8</maven.compiler.source>
      <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
+  <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>trial-releases</id>
+      <name>trail-releases</name>
+      <url>http://ec2-18-134-5-119.eu-west-2.compute.amazonaws.com:8081/repository/trial-releases/</url>
+      <layout>default</layout>
+    </repository>
+    <snapshotRepository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>trial-snapshots</id>
+      <name>trial-snapshots</name>
+      <url>http://ec2-18-134-5-119.eu-west-2.compute.amazonaws.com:8081/repository/trial-snapshots/</url>
+      <layout>default</layout>
+    </snapshotRepository>
+</distributionManagement>
 </project>
